@@ -1,0 +1,671 @@
+/*estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin: 0;
+
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0rem 2rem;
+    padding-top: 1.5rem;
+    color: #d27aac;
+}
+
+h2{
+    font-size: 1.7em;
+}
+
+h3{
+    font-size: 1.3em;
+}
+
+h4{
+    font-size: 1em;
+    color: #ffff
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.texto-negrita{
+    font-weight: bold;
+}
+
+/* estilos navbar*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4.5rem;
+}
+
+
+header .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.navbar-toggler:hover{
+    color: rgb(209, 140, 178);
+
+}
+
+.navbar .navbar-item a:hover{
+    background-color: #d27aac;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10%;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+nav a {
+    color: rgb(209, 140, 178);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* estilos hero*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    line-height: 130%;
+    font-size: 160%;
+    font-weight:bold;
+    padding: 0rem 2rem;
+    width: 100%;
+    height: 35vh;
+    color: white;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*estilos parrafo principal y cards*/ 
+.info-main{
+    margin: 0% 5%;
+}
+
+.texto-centrado{
+    font-size: 90%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0rem 2rem;
+}
+
+#temas-importantes{
+    text-align: center;
+}
+
+#temas-importantes .conteiner{
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#temas-importantes p{
+    display: none;
+}
+
+#temas-importantes .card{
+    margin: 30px 10px 15px;
+    color: #fff;
+    border-radius: 15px;
+    background-position: center center;
+    background-size: cover;
+    padding: 80px;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.card:first-child{
+    background-image: url("../img/donacion-economica.png");
+}
+
+.card:nth-child(2){
+    background-image: url("../img/donacion-material.png");
+    padding: 60px;
+}
+
+.card:last-child{
+    background-image: url("../img/bazar-beneficio.png");
+
+}
+
+/*galeria adopciones*/
+
+#adopciones{
+    background-color: #ddbccf;
+    padding-bottom: 60px;
+    align-items: center;
+    justify-items: center;
+}
+ 
+.galeria-item {
+    color: #f2f4f3;
+    text-align: center;
+    align-items: center;
+    background-color: #d27aac;
+    border-radius: 5px;
+}
+  
+.galeria-item img {
+    width: 100%;
+}
+
+.las-adopciones{
+    font-size: 120%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.las-adopciones h2{
+    font-weight: bold;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            300px,
+            1fr
+        )
+    );
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*RESPONSIVE DESKTOP*/
+
+@media screen and (min-width: 1024px){
+    /*estilos hero */
+
+    body{
+        background-color: aqua;
+    }
+
+    h1{
+        font-size: 2.7em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    header .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        font-size: 5rem;
+        line-height: 130%;
+        padding: 0rem 5rem;
+        width: 100%;
+        height: 800px;
+        color: white;
+        background-image: url(../img/banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;}
+
+    /*estilos texto under hover*/
+    .info-main{
+        margin: 0% 5%;
+        width: 100%; 
+    }
+    
+    .texto-centrado{
+        font-size: 150%;
+        align-items: center;
+        justify-items: center;
+        padding: 0rem 5rem;
+    }
+
+    /*estilos de cards*/
+
+    #temas-importantes .info-card{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    
+    #temas-importantes p{
+        display: block;
+    }
+    
+    #temas-importantes .card{
+        padding: 100px;
+        height: 15rem;
+    }
+
+    /*HEROUNO ESTILOS*/
+    #herouno{
+        background-image: url(../img/banner4.png);
+    }
+
+    
+    /*ESTILOS FOOTER*/
+    footer .container-footer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+
+/*NOSOTROS.HTML*/
+/*hero + texto*/
+#herouno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    line-height: 130%;
+    font-size: 160%;
+    font-weight: bold;
+    padding: 0rem 2rem;
+    width: 100%;
+    height: 35vh;
+    color: white;
+    background-image: url(../img/banner3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: hero-uno;
+}
+
+#hero-cuatro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    font-size: 5rem;
+    line-height: 130%;
+    padding: 0rem 5rem;
+    width: 100%;
+    height: 800px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nosotros-main{
+display: grid;
+grid-template-areas:
+    "info-main"
+    "texto-mision"
+    "img-container"
+    "texto-vision"
+    "img-dos";
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.info-main{
+    grid-area: info-main;
+}
+.texto-mision{
+    grid-area: texto-mision;
+    width: 55%;
+    text-align: initial;
+}
+
+.img-container{
+    grid-area: img-container;
+}
+
+.img-dos{
+    grid-area: img-dos;
+    padding-bottom: 5rem;
+}
+
+.texto-vision{
+    grid-area: texto-vision;
+    width: 55%;
+    text-align: initial;
+    padding-bottom: 5rem;
+}
+
+
+/*ADOPTAR HTML*/
+/*hero*/
+
+.hero2{
+    background: url(../img/banner3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+}
+
+/*requisitos*/
+/*foto derecha*/
+
+#lista-uno .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+#lista-uno .img-container1{
+    background-image: url(../img/requisitos1.png);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 500px;
+}
+
+#lista-uno .texto-requisitos1{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+/*foto izquierda*/
+#lista-dos .container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+#lista-dos .img-container2{
+    background-image: url(../img/requisitos2.png);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 500px;
+}
+
+#lista-dos .texto-requisitos2{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+/*foto derecha*/
+#lista-tres .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+#lista-tres .img-container3{
+    background-image: url(../img/requisitos3.png);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 500px;
+}
+
+#lista-tres .texto-requisitos3{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+/*CONTACTO*/
+.hero3{
+    background: url(../img/banner4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+}
+
+/*Form*/
+
+form {
+    display: flex;
+    margin-top: 0em;
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+}
+
+.section-form .container-form .form-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-form .container-form .form-1 .field {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #ddbccf;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.section-form .container-form {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 180px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.section-form .container-form .form-1 .send-button{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    outline: 0px;
+    background: #d27aac;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.boxicon-form{
+    fill: #d27aac;
+}
+
+/*DONAR*/
+
+#hero-cuatro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    line-height: 130%;
+    font-size: 160%;
+    font-weight: bold;
+    padding: 0rem 2rem;
+    width: 100%;
+    height: 35vh;
+    color: white;
+    background-image: url(../img/banner5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: hero-uno;
+}
+
+/*FOOTER*/
+
+footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 30vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100x;
+    background: #d27aac;
+}
+
+footer .container-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1,1fr;
+    gap: 60px;
+    justify-items: center;
+    padding: 2rem 5rem 0rem 5rem;
+}
+
+footer .container-footer .sec h3{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+footer .container-footer .sec h3::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+footer .container-footer .sec p{
+    color: white;
+}
+
+.sci{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 0.5rem;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #ddbccf;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+    background: rgba(255, 255, 255, 0.608);
+}
+
+.sciol, ul {
+    padding-left: 0rem;
+}
+
+.sci li a .boxicon{
+    fill: #9b577e;
+}
+
+.info{
+    position: relative;
+}
+
+.info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 0.5rem;
+}
+
+.info li span{
+    fill: #fff;
+    color: white;
+}
+
+.info a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyright-text{
+    width: 100%;
+    background-color: #ddbccf;
+    padding: 0.3rem 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #d27aac;
+    font-weight: bold;
+}
